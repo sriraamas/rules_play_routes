@@ -8,13 +8,14 @@ def play_routes_test_repositories():
     maven_install(
         name = "play_routes_test",
         artifacts = [
+            "org.scalatestplus.play:scalatestplus-play_2.11:4.0.3",
             "org.specs2:specs2-common_2.11:3.6.6",
             "org.specs2:specs2-core_2.11:3.6.6",
             "org.specs2:specs2-matcher_2.11:3.6.6",
             "com.typesafe.akka:akka-actor_2.11:2.4.20",
-            "com.typesafe.play:play_2.11:2.5.19",
-            "com.typesafe.play:play-test_2.11:2.5.19",
-            "com.typesafe.play:play-specs2_2.11:2.5.19",
+            "com.typesafe.play:play_2.11:2.7.2",
+            "com.typesafe.play:play-test_2.11:2.7.2",
+            "com.typesafe.play:play-specs2_2.11:2.7.2",
         ],
         repositories = [
             "http://central.maven.org/maven2",

@@ -5,11 +5,10 @@ import play.api.test._
 import play.api.test.WithApplication
 import play.api.test.Helpers._
 import rulesplayroutes.test.routes.ReverseRoutesController
+import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.test._
 
-class PlayRoutesCompilerTest extends Specification {
-
-  val app = new FakeApplication()
-
+class PlayRoutesCompilerTest extends Specification with GuiceOneAppPerSuite {
   "Play Routes Compiler when run through Bazel" should {
     "Compile Play routes" in new WithApplication() {
       status(route(app, FakeRequest(GET, "/ok")).get) mustEqual OK
