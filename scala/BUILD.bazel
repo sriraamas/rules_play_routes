@@ -5,7 +5,7 @@ load(
     "scala_library",
 )
 
-scala_version = "2.11.12"
+scala_version = "2.12.8"
 
 compiler_classpath = [
     "@play_routes//:org_scala_lang_scala_compiler",
